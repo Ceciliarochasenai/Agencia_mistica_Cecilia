@@ -11,7 +11,7 @@
      <header class="cabecalho">
         <div class="logo">
             <i class="fa-solid fa-earth-asia"></i>
-            <span>Agência Mística</span>
+            <span>Viagem Mística</span>
         </div>
 
         <div class="navegacao">
@@ -30,5 +30,33 @@
         </div>
     </header>
 
+   <main class="Container">
+        <h1 class="Titulo-secao">Cadastro para contato</h1>
+        <p class="Subtitulo">Preencha seus dados para entrarmos em contato com você!</p>
+
+        <div class="preencher-information">
+
+            <form action="/Processar-cadastro" method="post" class="Coluna-form">
+
+                <label for="Nome">Nome: </label>
+                <input type="text" id="Nome" name="Nome" placeholder="Digite seu Nome Completo" required minlength="3" maxlength="50">
+
+                <label for="Email">E-mail: </label>
+                <input type="email" id="Email" name="Email" placeholder="exemplo@seumail.com" required>
+
+                <label for="Endereco">Endereço: </label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, nº, bairro, cidade, CEP">
+
+                <br><br><input type="checkbox" name="Termos" id="Termos" required>
+                <label for="Termos">Li e Aceito os Termos</label><br><br>
+
+                <button type="Submit" class="btn-enviar">Enviar</button>
+                <button type="reset" class="btn-limpar">Limpar Tudo</button>
+            </form>
+        </div>
+    </main>   
+    <footer>
+        <p class="rodape">Entre em contato: (17)98147-8637  © 2026 Agência Mística - Todos os direitos reservados </p>
+    </footer> 
 </body>
 </html>
